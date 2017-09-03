@@ -36,7 +36,7 @@ inline unsigned short* Clock::getTime() {
     return giving;
 }
 void Clock::print_Time(){
-    printf("",format ? ' ': day ? morning: evening),(format ? ' ': 'm');
+    printf("%2u:%2u:%2u %c%c\n",hours,minutes,seconds,(format ? ' ': day ? morning: evening),(format ? ' ': 'm'));
 }
 inline void Clock::secpp() {
     if (seconds < MAX_MINTS_SEC)

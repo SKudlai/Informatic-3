@@ -15,8 +15,8 @@ class Clock {
     unsigned short seconds;
     bool format;//24 hours = true; 12 hours = false
     bool day;
-    static const char morning = 'a';
-    static const char evening = 'p';
+#define morning  'a'
+#define evening  'p'
 #define MaxHours  (format ? 23:  MID_DAY )
 public:
     Clock(bool frmt){
